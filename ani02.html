@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Blog Page</title>
+    <link type="text/css" rel="stylesheet" href="mycss.css">
+    <style>
+        #img1,#img2{
+            width: 100px;
+            display: block;
+            position: relative;
+            margin: 10px;
+            animation: myanim 5s infinite;
+        }
+        #img1{
+            animation-timing-function: ease-out;
+        }
+        #img2{
+            animation-timing-function: ease-in;
+        }
+        @keyframes myanim {
+            from {
+                left : 0px;
+            }
+            to {
+                left : 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MY Blog Page</h1>
+    </header>
+    <nav>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JAVASCRIPT</a></li>
+            <li><a href="ani01.html">animation1</a></li>
+            <li><a href="ani02.html">animation2</a></li>
+        </ul>
+        <figure>
+            <img src="2.png" width="200" alt="img">
+            <figcaption>MY code</figcaption>
+        </figure>
+    </nav>
+    <section id="main">
+        <h2>Animation2</h2>
+        <article>
+            <h3>Animation1 - rabbit&turtle</h3>
+            <div><img id="img1" src="rabbit.png"></div>
+            <div><img id="img2" src="turtle.png"></div>
+        </article>
+    </section>
+    <footer>
+        Copyright (c) 2024 LEE
+    </footer>
+</body>
+</html>
